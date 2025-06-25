@@ -18,7 +18,7 @@ from telegram.ext import (
     filters,
     AIORateLimiter,
 )
-from telegram.utils.helpers import escape_markdown
+from telegram.helpers import escape_markdown
 from dotenv import load_dotenv
 from datetime import datetime, timezone
 
