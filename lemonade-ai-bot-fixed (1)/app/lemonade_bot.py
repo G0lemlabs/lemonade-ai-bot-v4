@@ -372,7 +372,7 @@ def shutdown(signum, frame):
 
 def main():
     """Main function to run the bot."""
-    app = ApplicationBuilder().token(TOKEN).rate_limiter(AIORateLimiter()).build()
+    app = ApplicationBuilder().token(TOKEN).rate_limiter(AIORateLimiter()).read_timeout(30).connect_timeout(30).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("help", help_command))
     app.add_handler(CommandHandler("status", status))
