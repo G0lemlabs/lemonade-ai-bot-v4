@@ -22,8 +22,7 @@ from telegram.helpers import escape_markdown
 from dotenv import load_dotenv
 from datetime import datetime, timezone
 
-# Load environment variables
-load_dotenv()
+# Railway already provides environment variables, no need to load .env
 
 # Validate environment variables
 TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
