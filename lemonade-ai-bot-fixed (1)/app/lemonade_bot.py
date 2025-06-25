@@ -16,7 +16,7 @@ from telegram.ext import (
     ContextTypes,
     MessageHandler,
     filters,
-    RateLimiter,
+    AIORateLimiter,
 )
 from telegram.utils.helpers import escape_markdown
 from dotenv import load_dotenv
